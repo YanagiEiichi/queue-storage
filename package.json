@@ -1,0 +1,11 @@
+{
+  "name": "queue-storage",
+  "version": "0.0.1",
+  "description": "queue storage on linked list",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd tests && ./test"
+  },
+  "author": "admin@web-tinker.com",
+  "license": "MIT"
+}
