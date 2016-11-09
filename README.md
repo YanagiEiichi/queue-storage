@@ -1,6 +1,10 @@
 ## queue-storage
 
-queue storage on linked list
+Queue storage with linked list.
+
+#### Env
+
+node^6
 
 #### Usage
 

@@ -1,11 +1,26 @@
 {
   "name": "queue-storage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "queue storage on linked list",
   "main": "index.js",
   "scripts": {
-    "test": "cd tests && ./test"
+    "test": "cd tests && ./test.sh"
   },
+  "keywords": [
+    "queue",
+    "linked list"
+  ],
   "author": "admin@web-tinker.com",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YanagiEiichi/queue-storage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YanagiEiichi/queue-storage/issues"
+  },
+  "homepage": "https://github.com/YanagiEiichi/queue-storage#readme"
 }
