@@ -19,7 +19,7 @@ queue.front; // get front item
 
 queue.back; // get back item
 
-queue.back; // get size of queue
+queue.size; // get size of queue
 
 // iterable
 for (let i of queue) {
