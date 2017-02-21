@@ -54,6 +54,8 @@ class QueueStorage {
     // Pop Item from LinkedList
     let item = this[BACK];
     this[BACK] = item.prev;
+    item.prev = null;
+    if (this[BACK]) this[BACK].next = null;
     // Remove Front If Empty
     if (this[SIZE] === 0) this[FRONT] = null;
     return item.data;
