@@ -1,7 +1,6 @@
 class QueueItem {
-  constructor(data, next) {
+  constructor(data) {
     this.data = data;
-    this.next = next;
     this.prev = null;
   }
 }
@@ -40,7 +39,7 @@ class QueueStorage {
     // Increase Size
     this[SIZE]++;
     // Create Item and Push to Front on LinkedList
-    let item = new QueueItem(data, this[FRONT]);
+    let item = new QueueItem(data);
     if (this[FRONT]) this[FRONT].prev = item;
     this[FRONT] = item;
     // Set to "back" If LinkedList is Empty
@@ -54,8 +53,6 @@ class QueueStorage {
     // Pop Item from LinkedList
     let item = this[BACK];
     this[BACK] = item.prev;
-    item.prev = null;
-    if (this[BACK]) this[BACK].next = null;
     // Remove Front If Empty
     if (this[SIZE] === 0) this[FRONT] = null;
     return item.data;
